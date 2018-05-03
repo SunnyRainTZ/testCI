@@ -2,6 +2,8 @@ language: python
 python:
   - "2.7"
 # command to run tests
+install:
+    - pip install pytest
 script:
     - echo $DIR, `pwd`
     - py.test -x -vv -s `pwd`/tests/
